@@ -273,3 +273,9 @@ span{
         width: calc(100% + 8px);
     }
 }
+
+.heading{
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
