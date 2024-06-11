@@ -398,6 +398,8 @@ span{
 {
     background: var(--bg-color);
     color: #fff;
+    margin-bottom: 10rem;
+
 }
 .services h2{
     margin-bottom: 5rem;
@@ -442,3 +444,44 @@ span{
     margin: auto;
 }
 
+.input-group{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: var(--main-color);
+    margin: 1rem auto;
+    gap: 5rem;
+}
+.input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 4px;
+    color: #000;
+    cursor: pointer;
+}
+.input-group:hover{
+    background-color: #fff;
+    color: #000;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+
+.input-box i{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.input-box a{
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.input-box a:hover{
+    text-decoration: underline;
+    transition: 0.4s ease-in-out;
+
+}
