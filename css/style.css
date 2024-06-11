@@ -273,11 +273,19 @@ span{
         width: calc(100% + 8px);
     }
 }
-
-.heading{
-    font-size: 8rem;
+.subheading{
+    font-size: 1.5rem;
     text-align: center;
-    margin: 5rem 0;
+    margin-top: 5rem;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.heading{
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+
 }
 
 .education{
@@ -384,3 +392,53 @@ span{
     background-color: var(--bg-color);
     width: 50px;
 }
+
+
+.services
+{
+    background: var(--bg-color);
+    color: #fff;
+}
+.services h2{
+    margin-bottom: 5rem;
+    color: #fff;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin: 0 8rem;
+    color: #000;
+}
+.services-box{
+    background-color: var(--main-color);
+    height: 200px;
+    border-radius: 3rem;
+    border: 5x solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.services-box:hover
+{
+    background-color: #fff;
+    color: #000;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.services-box .services-info{
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    justify-content: left;
+    align-items: center;
+    padding: 5rem 3rem;
+}
+
+.services-info img{
+    max-height: 100px;
+    margin: auto;
+}
+
