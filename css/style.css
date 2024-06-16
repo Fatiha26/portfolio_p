@@ -451,8 +451,34 @@ span{
     background-color: var(--bg-color);
     width: 50px;
 }
-
-
+ 
+#projects
+{
+    position: relative;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin: 3rem 6rem;
+}
+.color-container
+{
+    border-color: rgb(163,163,163);
+    background: rgb(250,250,250);
+}
+.article-container{
+    width: 50%;
+    text-align: center;
+}
+.project-img{
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+}
+.project-subtitle{
+    margin: 1rem;
+}
 .services
 {
     background: var(--bg-color);
