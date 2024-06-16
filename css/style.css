@@ -491,6 +491,7 @@ span{
 }
 .project-btn{
     margin-right: 1rem;
+    border: 1px solid #000;
 }
 .services
 {
