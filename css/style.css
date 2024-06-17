@@ -627,6 +627,45 @@ footer{
     color: #2E279D;
 }
 
+
+.scroll-btn
+{
+    width: 50px;
+    height: 48px;
+    background: #2E279D;
+    border-radius: 50%;
+    position: fixed;
+    right: 2%;
+    bottom: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    scroll-behavior: smooth;
+
+}
+.scroll-btn:hover
+{
+    background: #46B3E6;
+    transition: 0.5s ease-out;  
+    color: #000; 
+}
+
+.scroll-btn i
+{
+    font-size: 25px;
+    padding-left: 12px;
+    padding-top: 11px;
+    color: #fff;
+}
+
+.scroll-btn i:hover
+{
+    color: #1e272e;
+    transition: 0.5s ease-out;
+}
+
+
+
+
 @media(max-width:1285px){
     html{
         font-size: 55%;
