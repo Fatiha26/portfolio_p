@@ -430,16 +430,17 @@ span{
 }
 
 .timeline-content h3{
-    font-size: 20px;
+    font-size: 2rem;
     color: #000;
     margin: 0 0 10px;
     font-weight: 500;
 }
 
 .timeline-content p{
-    font-size: 16px;
+    font-size: 1.5rem;
     color: #000;
     font-weight: 300;
+    text-align: justify;
     line-height: 22px;
 }
 
@@ -489,9 +490,12 @@ span{
     cursor: pointer;
 }
 .project-subtitle{
-    margin: 3rem;
+    margin: 2rem;
     font-size: 2rem;
     color: #000;
+}
+.project-subtitle-p{
+
 }
 .project-btn{
     margin-right: 1rem;
