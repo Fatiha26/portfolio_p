@@ -548,6 +548,10 @@ span{
     margin: auto;
 }
 
+
+section.contact{
+    min-height: 80vh;
+ }
 .input-group{
     width: 40vw;
     display: flex;
