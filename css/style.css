@@ -404,8 +404,8 @@ span{
     height: 21px;
     width: 21px;
     background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
+    box-shadow: 0 0 10px var(--main-color),
+                0 0 20px var(--new-bg);
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50%;
@@ -629,6 +629,9 @@ footer{
     header{
         padding: 2rem 3%;
     }
+    .home-img{
+        width: 100%;
+    }
 
     .timeline-items::before{
         left: 7px;
@@ -708,7 +711,7 @@ footer{
         margin: 0 auto;
     }
     .home-img img{
-        width: 45vw;
+        width: 100%;
     }
     .services h2{
         margin-bottom: 3rem;
@@ -737,6 +740,10 @@ footer{
       .timeline-items{
         padding: 0 1rem;
       }
+      .timeline-dot
+      {
+        left: -10px;
+      }
 
     .footer-text{
         font-size: 1.5rem;
@@ -744,8 +751,20 @@ footer{
 }
 
 @media(max-width:700px){
+    
     .home-img img{
         width: 100%;
+    }
+    .home{
+        gap: 10rem;
+        padding: 2rem 0;
+        padding-top: 6rem;
+    }
+    .about{
+        margin-top: -100px;
+    }
+    .services{
+        margin-bottom: -30px;
     }
     .services h2{
         margin-bottom: 3rem;
