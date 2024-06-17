@@ -490,11 +490,15 @@ span{
     cursor: pointer;
 }
 .project-subtitle{
-    margin: 2rem;
+    margin-top: 2rem ;
     font-size: 2rem;
-    color: #000;
+    color: #2E279D;
 }
 .project-subtitle-p{
+    text-align: justify;
+    color: #1e272e;
+    margin: 1rem 0;
+    padding: 1rem 3rem;
 
 }
 .project-btn{
