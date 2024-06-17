@@ -137,6 +137,7 @@ span{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
+    text-align: justify;
     max-width: 1000px;
 }
 
@@ -323,7 +324,7 @@ span{
 
 }
 .details-container{
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     flex: 1;
     background-color: #fff;
     border-radius: 2rem;
@@ -338,7 +339,7 @@ span{
     color: var(--main-color);
 }
 .details-container h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 .details-container p{
