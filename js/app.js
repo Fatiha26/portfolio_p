@@ -20,6 +20,6 @@ window.onscroll = () => {
 }
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
+    menuIcon.classList.toggle('&#10006');
     navbar.classList.toggle('active');
 }

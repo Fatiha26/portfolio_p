@@ -72,6 +72,11 @@ body{
     color: var(--main-color);
     display: none;
 }
+.fa-xmark{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
 
 section{
     min-height: 100vh;
@@ -643,6 +648,7 @@ footer{
     #menu-icon{
         display: block;
     }
+  
     .navbar{
         position: absolute;
         top: 100%;
