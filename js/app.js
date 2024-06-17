@@ -54,3 +54,6 @@ function sqrFunction()
     document.getElementById("scroll-top").style.borderRadius = "5px";
     document.getElementById("scroll-top").style.transition = "0.5s";
 }
+
+
+AOS.init();

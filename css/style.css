@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -237,15 +239,15 @@ span{
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "Graphics Designer";
     }
     61%,
     80%{
-        content: "Graphics Designer";
+        content: "UI Designer";
     }
     81%,
     100%{
-        content: "SQA";
+        content: "Ux Designer";
     }
 }
 
