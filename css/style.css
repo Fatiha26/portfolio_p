@@ -34,8 +34,9 @@ body{
     left: 0;
     width: 100%;
     padding: 2rem 10% 2rem;
-    background: rgb(5, 12, 156);
-    backdrop-filter: blur(25px);
+    background: #B4D4FF;
+    backdrop-filter: blur(100px);
+    opacity: .8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +45,7 @@ body{
 
 .logo{
     font-size: 3rem;
-    color: #3ABEF9;
+    color: #2E279D;
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
@@ -58,7 +59,7 @@ body{
 
 .navbar a{
     font-size: 1.8rem;
-    color: var(--bg-color);
+    color: var(--main-color);
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -66,17 +67,12 @@ body{
 }
 .navbar a:hover,
 .navbar a.active{
-    color: var(--bg-color);
-    border-bottom: 3px solid var(--bg-color);
+    color: var(--text-color);
+    border-bottom: 3px solid var(--text-color);
 }
 #menu-icon{
     font-size: 3.6rem;
     color: var(--bg-color);
-    display: none;
-}
-.fa-xmark{
-    font-size: 3.6rem;
-    color: var(--main-color);
     display: none;
 }
 
@@ -118,17 +114,15 @@ span{
     margin-top: 1.5rem;
     line-height: 1;
 }
-.home-img{
-    border-radius: 50%;
-}
+
 
 .home-img img{
     position: relative;
     top: 3rem;
     width: 32vw;
     height: 70vh;
-    border-radius: 50%;
-    box-shadow: 0 0 20px var(--second-bg-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--second-bg-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
@@ -546,13 +540,31 @@ span{
     max-height: 180px;
     justify-content: left;
     align-items: center;
-    padding: 5rem 3rem;
+    padding: 4rem 3rem;
 }
 
 .services-info img{
-    max-height: 100px;
-    margin: auto;
+    max-height: 110px;
 }
+
+.services-type{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #2E279D;
+    opacity: 0;
+}
+.services-box:hover .services-type{
+    opacity: 1;
+    transition: 0.4s ease-out;
+    margin-top: 1rem;
+}
+.services-box:hover .services-info img{
+    margin-top: -1rem;
+    transition: 0.4s ease-out;
+    max-height: 90px;
+}
+
+
 
 
 section.contact{
@@ -604,7 +616,7 @@ section.contact{
 }
 
 footer{
-    background-color: var(--main-color);
+    background: #B4D4FF;
     text-align: center;
 }
 
@@ -612,7 +624,7 @@ footer{
     padding: 2rem 0;
     font-size: 2rem;
     font-weight: 600;
-    color: #fff;
+    color: #2E279D;
 }
 
 @media(max-width:1285px){
