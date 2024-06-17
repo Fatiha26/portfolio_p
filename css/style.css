@@ -36,9 +36,8 @@ body{
     left: 0;
     width: 100%;
     padding: 2rem 10% 2rem;
-    background: #B4D4FF;
+    background: var(--bg-color);
     backdrop-filter: blur(100px);
-    opacity: .8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,8 +56,9 @@ body{
     transform: scale(1.1);
 }
 .logo span{
-    text-shadow: 0 0 25px var(--main-color);
+    text-shadow: 3px 2px 1px var(--main-color);
     font-family: "Playwrite IS", cursive;
+    color: #fa8231;
 }
 
 .navbar a{
@@ -98,13 +98,14 @@ section{
     text-align: left;
     justify-content: center;
     margin-top: 3rem;
+    padding: 2.5rem 0;
 }
 
 span{
     color: var(--main-color);
 }
 .logo span{
-    color: var(--bg-color);
+    color: #fa8231;
 }
 
 .home-content h3{
