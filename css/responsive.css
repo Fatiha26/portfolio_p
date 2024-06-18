@@ -211,16 +211,16 @@
 }
 
 
-@media(max-width:470px){
+@media(max-width:412px){
 #menu-icon{
     position: absolute;
     top: 40%;
-    right: 25%;
+    right: 9%;
 }
     .navbar{
         position: absolute;
         top: 90%;
-        right: 18%;
+        right: 8%;
         width: 50%;
         padding: 1rem 3%;
     }
@@ -241,20 +241,22 @@
     .home-content p{
         max-width: 600px;
         margin: 0 auto;
-        padding-right: 3rem;
+        padding-right: 0.5rem;
     }
     .home-img img{
         width: 90%;
         height: 80%;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
 .about .subheading{
-    margin-top: -3rem;
+    margin-top: -1rem;
 }
 
     .section-container{
-        margin-left: -5rem;
+        margin-left: -3rem;
+        margin-right: -3rem;
+        padding-bottom: 5rem;      
      }
      .about-container{
          margin-top: 1rem;
@@ -271,10 +273,21 @@
      .details-container i{
          font-size: 3rem;
      }
+     .details-container h3{
+        font-size: 1.5rem;
+     }
+     .details-container p{
+        font-size: 1rem;
+     }
      .timeline-content{
         padding: 20px 40px;
     }
-
+    .timeline-content p{
+        font-size: 1.2rem;
+    }
+    .timeline-content h3{
+        font-size: 1.5rem;
+    }
      section.contact{
         min-height: 10vh;
      }
@@ -283,7 +296,7 @@
      }
     .input-group{
         width: 100%;
-        gap: 1.5rem;  
+        gap: 1rem;
     }
    .project-container{
     margin: 5rem 2rem;
@@ -297,33 +310,47 @@
     }
     
     .input-box a{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .services .subheading{
         margin-top: 5rem;
      }
 
+     
       .scroll-btn
       {
-          width: 50px;
-          height: 48px;
+          width: 40px;
+          height: 38px;
           border-radius: 50%;
           position: fixed;
-          right: 10%;
+          right: 8%;
           bottom: 15px;
+          background: transparent;
       
       }
-
+      .scroll-btn:hover
+     {
+         transition: 0.5s ease-out;  
+         color: #000; 
+         border: 1px solid #2E279D;
+     }
+      .scroll-btn i
+{
+    font-size: 20px;
+    padding-left: 12px;
+    padding-top: 11px;
+    color: #000;
+}
       .subheading{
         font-size: 1rem;
         margin-top: 2rem;
     }
     .heading{
         font-size: 3rem;
-    
     }
     .footer{
         margin-top: -5rem;
     }
+
 }
