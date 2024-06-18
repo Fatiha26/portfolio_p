@@ -298,6 +298,7 @@ span{
 #about
 {
     position: relative;
+
 }
 .section-container{
    gap: 4rem;
@@ -653,10 +654,10 @@ footer{
 {
     width: 50px;
     height: 48px;
-    background: #2E279D;
+    background: transparent;
     border-radius: 50%;
     position: fixed;
-    right: 2%;
+    right: 6%;
     bottom: 30px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255,255,255,0.5);
@@ -665,9 +666,9 @@ footer{
 }
 .scroll-btn:hover
 {
-    background: #46B3E6;
     transition: 0.5s ease-out;  
     color: #000; 
+    border: 1px solid #2E279D;
 }
 
 .scroll-btn i
@@ -675,7 +676,7 @@ footer{
     font-size: 25px;
     padding-left: 12px;
     padding-top: 11px;
-    color: #fff;
+    color: #000;
 }
 
 .scroll-btn i:hover
