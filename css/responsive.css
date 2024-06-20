@@ -280,13 +280,20 @@
         font-size: 1rem;
      }
      .timeline-content{
-        padding: 20px 40px;
+        padding: 15px 30px;
     }
     .timeline-content p{
         font-size: 1.2rem;
     }
     .timeline-content h3{
         font-size: 1.5rem;
+    }
+    .timeline-content-inner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .timeline-content-inner .certificate-img img{
+        width: 100%;
+        margin-top: 2px;
     }
      section.contact{
         min-height: 10vh;
