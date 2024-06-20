@@ -47,7 +47,7 @@ body{
 .logo{
     font-family: "Playwrite IS", cursive;
     font-size: 3rem;
-    color: #2E279D;
+    color: var(--main-color);
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
@@ -56,9 +56,9 @@ body{
     transform: scale(1.1);
 }
 .logo span{
-    text-shadow: 3px 2px 1px var(--main-color);
+    text-shadow: 3px 3px 0 #ddd;
     font-family: "Playwrite IS", cursive;
-    color: #fa8231;
+    font-size: 2.8rem;
 }
 
 .navbar a{
