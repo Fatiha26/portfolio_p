@@ -32,17 +32,9 @@ body{
 }
 
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 2rem 10% 2rem;
+    padding: 2rem 8% 1rem;
     background: var(--bg-color);
-    backdrop-filter: blur(100px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
 }
 
 .logo{
@@ -61,19 +53,48 @@ body{
     font-family: "Playwrite IS", cursive;
     font-size: 2.8rem;
 }
+.navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    position: absolute;
+    z-index: 9999;
+    left: 5%;
+    top: 23%;
+    border-right: 2px solid #2E279D;
+}
+.navbar a i{
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    color: #2E279D;
+    text-align: center;
+    padding-top: 0.9rem;
+    position: relative;
+    
+}
+.navbar a i:hover{
+    transform: scale(1.3);
 
-.navbar a{
-    font-size: 1.8rem;
-    color: var(--main-color);
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+}
+.tooltip{
+    font-size: 1.2rem;
+    color: #fff;
+    background: #727272;
+    border-radius: 8px;
+    padding: 0.8rem;
+    transition: 0.4s ease-out;
+    opacity: 0;
+}
+.navbar a:hover .tooltip{
+   opacity: 1;
 }
 .navbar a:hover,
 .navbar a.active{
     color: var(--text-color);
-    border-bottom: 3px solid var(--text-color);
+    /*border-bottom: 3px solid var(--text-color);*/
 }
 #menu-icon{
     font-size: 3.6rem;
@@ -81,25 +102,23 @@ body{
     display: none;
 }
 
-section{
-    min-height: 100vh;
-    padding: 10rem 12% 10rem;
-}
-
 .home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 15rem;
+    position: relative;
+    margin-top: 2rem;
 }
 .home-content{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
     text-align: left;
     justify-content: center;
-    margin-top: 3rem;
-    padding: 2.5rem 0;
+    right: 0;
+    position: absolute;
+    width: 65vw;
+    margin: 0rem 6rem;
 }
 
 span{
@@ -122,22 +141,6 @@ span{
 }
 
 
-.home-img img{
-    position: relative;
-    top: 3rem;
-    width: 26vw;
-    height: 70vh;
-    border-radius: 3rem;
-    box-shadow: 0 0 5px var(--img-color);
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-}
-
-.home-img img:hover{
-    box-shadow: 0 0 5px var(--main-color),
-                0 0 10px var(--main-color),
-                0 0 40px var(--main-color),;
-}
 
 .home-content p{
     font-size: 1.5rem;
@@ -154,7 +157,8 @@ span{
     width: 4.5rem;
     height: 4.5rem;
     background: transparent;
-    border: 2px solid var(--new-color);
+    border: 1px solid var(--new-color);
+    color: #000;
     font-size: 2.5rem;
     border-radius: 50%;
     color: var(--main-color);
@@ -164,7 +168,7 @@ span{
 .social-icon a:hover{
     color: var(--text-color);
     transform: scale(1.3) translateY(-5px);
-    box-shadow: 0 0 10px var(--main-color);
+    box-shadow: 0 0 5px var(--main-color);
     border-color: var(--main-color);
 }
 
@@ -173,11 +177,11 @@ span{
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--bg-color);
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 5px var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
     color: #000;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease-in-out;
@@ -282,15 +286,15 @@ span{
     }
 }
 .subheading{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
-    margin-top: 5rem;
     color: var(--main-color);
     text-transform: capitalize;
 }
 .heading{
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
+    margin-bottom: 1rem;
     text-transform: capitalize;
 
 }
@@ -298,15 +302,18 @@ span{
 
 #about
 {
-    position: relative;
-
+    padding: 100px 15px;
+    margin-left: 30rem;
+    width: 75vw;
+    margin-top: -10rem;
 }
+
 .section-container{
-   gap: 4rem;
    display: grid;
    grid-template-columns: 40% 60%;
-   height: 80vh;
-   padding: 2rem 1rem;
+   gap: 5rem;
+   width: 70vw;
+   
 }
 .section_pic-container{
     margin: auto 0;
@@ -315,19 +322,22 @@ span{
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    width: 100%;
 }
 .about-details-container{
     justify-content: center;
     flex-direction: column;
+    width: 55rem;
+    padding: 1rem 0;
+
 }
 .about-container,
 .about-details-container{
     display: flex;
 }
 .about-pic{
-    border-radius: 2rem;
-    
-    width: 24vw;
+    border-radius: 2rem;  
+    width: 26vw;
     height: 70vh;
 }
 .about-continue {
@@ -363,17 +373,23 @@ span{
     margin-bottom: 1rem;
 
 }
+
+
+
 .education{
     padding: 100px 15px;
-    background: var(--new-bg);
+    margin-left: 30rem;
+    width: 72vw;
+    margin-top: -10rem;
+
 }
 
 .education h2{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .timeline-items{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -390,7 +406,7 @@ span{
 }
 
 .timeline-item{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 100%;
     position: relative;
 }
@@ -428,9 +444,9 @@ span{
 
 .timeline-content{
     background-color: var(--bg-color);
-    padding: 20px 40px;
+    padding: 20px 22px;
     border-radius: 2rem;
-    box-shadow: 1px 1px 6px #484646;
+    box-shadow: 1px 1px 3px #484646;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
@@ -441,7 +457,7 @@ span{
 }
 
 .timeline-content h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #000;
     margin: 0 0 10px;
     font-weight: 500;
@@ -477,12 +493,16 @@ span{
  
 #projects
 {
-    position: relative;
+    color: #fff;
+    padding: 4rem 3rem;
+    margin-left: 20rem;
+    margin-top: -6rem;
+    width: 90vw;
 }
 .project-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 2.5rem;
+    gap: 2rem;
     margin: 5rem 6rem;
 }
 .color-container
@@ -529,9 +549,11 @@ span{
 
 .services
 {
-    background: var(--bg-color);
     color: #fff;
-    margin-bottom: 10rem;
+    padding: 4rem 3rem;
+    margin-left: 28rem;
+    margin-top: -6rem;
+    width: 80vw;
 
 }
 .services h2{
@@ -595,8 +617,10 @@ span{
 
 
 section.contact{
-    min-height: 80vh;
-    background: var(--new-bg);
+    background: var(--bg-color);
+    padding: 4rem 3rem;
+    margin-left: 20rem;
+    width: 88vw;
  }
 .input-group{
     width: 40vw;
@@ -605,7 +629,7 @@ section.contact{
     align-items: center;
     border-radius: 2rem;
     background-color: var(--bg-color);
-    margin: 1rem auto;
+    margin: 10rem auto;
     gap: 5rem;
     border: 1px solid var(--main-color);
 
@@ -641,39 +665,51 @@ section.contact{
     transition: 0.4s ease-in-out;
 
 }
+.contact-tnx{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
 
 footer{
-    background: #B4D4FF;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.footer-text p{
+    background-color: #3572EF;
+    color: #fff;
+    font-size: 1.5rem;
     text-align: center;
+    padding: 1rem 0;
 }
 
-.footer-text{
-    padding: 2rem 0;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2E279D;
-}
+
 
 
 .scroll-btn
 {
     width: 50px;
     height: 48px;
-    background: transparent;
+    background: none;
     border-radius: 50%;
     position: fixed;
-    right: 6%;
+    left: 7%;
     bottom: 30px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(255,255,255,0.5);
     scroll-behavior: smooth;
+    border: 1px solid #2E279D;
+
 
 }
 .scroll-btn:hover
 {
     transition: 0.5s ease-out;  
-    color: #000; 
-    border: 1px solid #2E279D;
+    color: #2E279D; 
 }
 
 .scroll-btn i
@@ -689,5 +725,4 @@ footer{
     color: #1e272e;
     transition: 0.5s ease-out;
 }
-
 

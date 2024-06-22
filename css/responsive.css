@@ -68,43 +68,23 @@
 }
 
 @media(max-width:895px){
-    #menu-icon{
-        display: block;
-    }
-  
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        padding: 1rem 3%;
-        background: rgba(255,255,255,0.8);
-        color: #000;
-        backdrop-filter: blur(30px);
-        border-bottom-left-radius: 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        display: none;
 
-    }
-    .navbar a:hover,
-     .navbar a.active{
-    color: var(--main-color);
-    border-bottom: 1px solid var(--text-color);
-     }
-    .navbar.active{
-        display: block;
-    }
-    .navbar a{
-        display: block;
+.logo{
+    font-size: 4rem;
+}
+    .navbar a i{
         font-size: 2rem;
-        margin: 3rem 0;
-        color: #000;
+        margin-bottom: 1rem;
+        
     }
     .home{
-        flex-direction: column-reverse;
-        margin: 5rem 4rem;
+        padding-top: 80rem;
     }
+    .home-content{
+        padding-top: 10rem;
+
+    }
+
     .home-content h3{
         font-size: 2.6rem;
     }
@@ -116,48 +96,121 @@
         max-width: 600px;
         margin: 0 auto;
     }
-    .home-img img{
-        width: 100%;
+    #about
+    {
+        padding: 0;
+        width: 65vw;
+        margin-top: -80rem;
     }
-
-    .services h2{
-        margin-bottom: 3rem;
+    .about-nav{
+        top: 10%;
+        left: 4%;
     }
-    .services-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-
     .section-container{
         margin-top: 2rem;
-        grid-template-columns: repeat(1,1fr);
-     }
-     .about-container{
-         margin-top: 1rem;
-     }
-     .about-page-container{
-        margin-bottom: 50rem;
-     }
-     .section-container{
+        grid-template-columns: repeat(1,1fr); 
+        gap: 3rem;
+        width: 67vw;
         gap: 2rem;
-        padding: 1rem 1rem;
-     }
-     .details-container i{
-         font-size: 4rem;
-     }
-     section.contact{
-         min-height: 40vh;
-      }
-      .timeline-items{
+       padding: 1rem 1rem;
+    }
+    .about-pic{
+        width: 50vw;
+        height: 50vh;
+    }
+   
+    .text-container p{
+        font-size: 1.3rem;
+    
+    }
+   
+    .details-container i{
+        font-size: 4rem;
+    }
+
+    .education{
+        margin-left: 28rem;
+        width: 70vw;
+        margin-top: -90rem;
+    
+    }
+    .timeline-content{
+        padding: 15px 25px;
+    }
+    .timeline-content p{
+        font-size: 1rem;
+        line-height: 15px;
+    }
+    .timeline-content h3{
+        font-size: 1.2rem;
+    }
+    .timeline-content-inner{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .timeline-content-inner .certificate-img img{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .timeline-items{
         padding: 0 1rem;
       }
       .timeline-dot
       {
         left: -10px;
       }
+   
+    .services-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .services
+    {
+        padding: 2rem 1rem;
+        margin-left: 23rem;
+        margin-top: -83rem;
+        width: 80vw;
+    
+    }
 
+    #projects
+{
+    padding: 2rem 1rem;
+    margin-left: 20rem;
+    margin-top: -83rem;
+    width: 80vw;
+}
+.project-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin: 5rem 7rem;
+}
+#contact{
+    padding: 2rem 1rem;
+    margin-left: 25rem;
+    margin-top: -75rem;
+    width: 75vw;
+ } 
     .footer-text{
         font-size: 1.5rem;
     }
+    .scroll-btn
+      {
+          width: 40px;
+          height: 38px;
+          border-radius: 50%;
+          position: fixed;
+          left: 8%;
+          top: 70%;
+          background: transparent;
+      
+      }
+      .scroll-btn i
+      {
+          font-size: 20px;
+          padding-left: 10px;
+          padding-top: 10px;
+          color: #000;
+      }
 }
 
 @media(max-width:700px){
@@ -173,9 +226,7 @@
     .home-content{
         margin-top: -3rem;
     }
-    .about{
-        margin-top: -10rem;
-    }
+
     .education .subheading{
         margin-top: -4rem;    }
     .services{
@@ -211,30 +262,44 @@
 }
 
 
-@media(max-width:412px){
-#menu-icon{
-    position: absolute;
-    top: 40%;
-    right: 7%;
-}
+@media(max-width:413px){
+    
+    .header{
+        padding: 2rem 10% 2rem;
+      }
+    .logo{
+        font-size: 3rem;
+       }
+    .logo span{
+        font-size: 2.5rem;
+       }
     .navbar{
-        position: absolute;
-        top: 90%;
-        right: 8%;
-        width: 50%;
-        padding: 1rem 3%;
+        left: -1%;
+        top: 50%;
+        border-right: none;
+    }
+    .navbar a i{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        padding-top: 0.5rem;
+        
     }
 
-
+   .home-content{
+         margin-top: -8rem;
+}   
     .home{
-        flex-direction: column-reverse;
-        margin: 2rem 2rem;
-    }
+            padding-top: 10rem;
+        }
+   
     .home-content h3{
         font-size: 2.2rem;
     }
     .home-content h1{
-        font-size: 6rem;
+        font-size: 4rem;
         margin-top: 1rem;
     }
    
@@ -248,25 +313,53 @@
         height: 80%;
         margin-left: 2rem;
     }
+    
 
-.about .subheading{
-    margin-top: -1rem;
+#about
+{
+    padding: 0;
+    margin-left: 8rem;
+    width: 80vw;
+    margin-top: -10rem;
+    overflow: hidden;
+}
+.about-nav{
+    top: 10%;
+    left: -1%;
 }
 
-    .section-container{
-        margin-left: -3rem;
-        margin-right: -3rem;
-        padding-bottom: 5rem;      
-     }
+.section-container{
+   grid-template-columns: repeat(1,1fr);
+   gap: 4rem;
+   width: 75vw;   
+}
+
      .about-container{
-         margin-top: 1rem;
-         gap: 1rem;
-         width: 100%;
-         margin-bottom: -6rem;
+        display: block;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        width: 70vw;
+         
      }
-     .about-page-container{
-        margin-bottom: 40rem;
+     .details-container{
+        padding: 2rem 1.5rem;
+        margin-bottom: 1rem;
+
+    
+    }
+
+     .about-pic{
+        width: 58vw;
+        height: 30vh;
+        margin-left: 2rem;
      }
+     .text-container p{
+         font-size: 1.2rem;
+         line-height: 20px;
+         width: 70vw;
+
+       }
      .section-container{
         gap: 1rem;
      }
@@ -279,14 +372,23 @@
      .details-container p{
         font-size: 1rem;
      }
+     .education{
+        padding: 100px 15px;
+        margin-left: 8rem;
+        width: 80vw;
+        margin-top: -15rem;
+    
+    }
+
      .timeline-content{
-        padding: 15px 30px;
+        padding: 10px 25px;
     }
     .timeline-content p{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 15px;
     }
     .timeline-content h3{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .timeline-content-inner{
         grid-template-columns: repeat(1,1fr);
@@ -295,22 +397,71 @@
         width: 100%;
         margin-top: 2px;
     }
-     section.contact{
-        min-height: 10vh;
-     }
-     section.contact .subheading{
-        margin-top: -4rem;
-     }
-    .input-group{
-        width: 100%;
-        gap: 1rem;
-    }
-   .project-container{
+
+    #projects
+{
+    padding: 2rem 1rem;
+    margin-left: 6rem;
+    margin-top: -10rem;
+    width: 85vw;
+}
+.home .project-nav{
+    top: 10%;
+}
+.project-container{
     margin: 5rem 2rem;
    }
    .details-container{
     width: 100%;
    }
+   .services
+{
+    padding: 2rem 1rem;
+    margin-left: 4.5rem;
+    margin-top: -10rem;
+    width: 85vw;
+
+}
+.services-container{
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.services-box .services-info{
+    max-height: 110px;
+    padding: 2rem 2rem;
+}
+.services-info img{
+    max-height: 70px;
+}
+
+.services-type{
+    font-size: 1.5rem;
+}
+
+.services-box:hover .services-info img{
+    margin-top: 0.5rem;
+    transition: 0.4s ease-out;
+    max-height: 50px;
+}
+
+
+#contact{
+    padding: 2rem 1rem;
+    margin-left: 8rem;
+    margin-top: -10rem;
+    background: transparent;
+    width: 80vw;
+ }
+
+    .input-group{
+        width: 100%;
+        gap: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+  
     .input-box i{
         font-size: 2rem;
         margin-right: .8rem;
@@ -320,10 +471,6 @@
         font-size: 1.2rem;
     }
 
-    .services .subheading{
-        margin-top: 5rem;
-     }
-
      
       .scroll-btn
       {
@@ -331,8 +478,8 @@
           height: 38px;
           border-radius: 50%;
           position: fixed;
-          right: 8%;
-          bottom: 15px;
+          left: 6%;
+          top: 80%;
           background: transparent;
       
       }
@@ -342,22 +489,7 @@
          color: #000; 
          border: 1px solid #2E279D;
      }
-      .scroll-btn i
-{
-    font-size: 20px;
-    padding-left: 12px;
-    padding-top: 11px;
-    color: #000;
-}
-      .subheading{
-        font-size: 1rem;
-        margin-top: 2rem;
-    }
-    .heading{
-        font-size: 3rem;
-    }
-    .footer{
-        margin-top: -5rem;
-    }
+
+
 
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lamia Fatiha</title>
+    <title>Lamia | About</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,79 +17,83 @@
 </head>
 <body>
 
-    <!-- header-->
-
     <header class="header">
         <a href="index.html" class="logo">
-            Lamia <span>Fatiha</span>
+            Lamia<span style="color: #25CCF7;">Fatiha</span>
         </a>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
        <!--<i class="fa-solid fa-xmark"></i>--> 
-
-        <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="#education">Certifications</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
     </header>
 
 
-
-
-
-    <section class="about" id="about">
-        <h4 class="subheading">Get to know more</h4>
-        <h2 class="heading">About <span>Me</span></h2>
-
-        <div class="section-container about-page-container">
-            <div class="section_pic-container">
-                <img src="img/lamia2.jpg" alt="" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="text-container">
-                    <p>My name is Lamia Fatiha. I am currently a final-year student at 
-                        Pataukhali Science and Technology University studying computer 
-                        science and engineering. At present, I am serving as vice-president 
-                        of the CSE Club at PSTU. I am capable of taking responsibility and 
-                        managing them. Teamwork and the management of a team are two of my 
-                        strongest skills. 
-                        <span class="about-continue-p">
-                            <br>I have a strong interest in web development, proficient in HTML, CSS, JavaScript, jQuery, PHP, and MySQL, and currently learning React.js. Leading the CSE Club, I've organized events that sharpened my communication, collaboration, and leadership skills.
-                            <br>Committed to personal and professional growth, I stay updated with technology advancements through online courses and webinars. I am enthusiastic about leveraging my skills in impactful projects and growing in the tech industry.
-                        </span>
-                    </p>
-                </div>
-                <div class="about-container">
-                    <div class="details-container">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <h3>B.Sc in CSE</h3>
-                        <p>Patuakhali Science & Technology University <br>[2019 –  ]</p>
-                    </div>
-                    <div class="details-container">
-                        <i class="fa-solid fa-award icon"></i>
-                        <h3>Vice-President (Programming Contest)</h3>
-                        <p>CSE CLUB, PSTU <br> [October2023 -    ]</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="home" id="home">
+        <nav class="navbar about-nav">
+            <a href="index.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                 <span class="tooltip">Home</span>
+            </a>
+            <a href="about.html"><i class="fa-solid fa-user"></i>
+                <span class="tooltip">About</span>
+            </a>
+            <a href="certifications.html"><i class="fa-solid fa-award"></i>
+                <span class="tooltip">Certifications</span>
+            </a>
+            <a href="skills.html"><i class="fa-solid fa-code"></i>
+                <span class="tooltip">Skills</span>
+            </a>
+            <a href="projects.html"><i class="fa-solid fa-folder"></i>
+                <span class="tooltip">Projects</span>
+            </a>
+            <a href="contact.html"><i class="fa-solid fa-address-book"></i>
+                <span class="tooltip">Contact</span>
+            </a>
+        </nav>
         
-
+        <!--<div class="home-img">
+            <img src="" alt="image coming soon">
+        </div>-->         
+            <section class="about" id="about">
+                <h4 class="subheading">Get to know more</h4>
+                <h2 class="heading">About <span>Me</span></h2>
+        
+                <div class="section-container about-page">
+                    <div class="section_pic-container">
+                        <img src="img/my1.jpg" alt="" class="about-pic">
+                    </div>
+                    <div class="about-details-container">
+                        <div class="text-container">
+                            <p>I'm Lamia Fatiha, a final-year Computer Science and Engineering student at Patuakhali Science and Technology University. As vice president of the CSE Club at PSTU, I have gained experience in teamwork and management by organizing various events. 
+                               <br> I am passionate about web development and possess proficiency in HTML, CSS, JavaScript, jQuery, PHP, and MySQL, and I am currently learning React.js. In addition to keeping up with the latest technological advances through online courses and webinars, I am always eager to apply my skills to meaningful projects and to advance my career. 
+                            </p>
+                        </div>
+                        <div class="about-container">
+                            <div class="details-container">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <h3>B.Sc in CSE</h3>
+                                <p>Patuakhali Science & Technology University <br>[2019 –  ]</p>
+                            </div>
+                            <div class="details-container">
+                                <i class="fa-solid fa-award icon"></i>
+                                <h3>Vice-President (Programming Contest)</h3>
+                                <p>CSE CLUB, PSTU <br> [October2023 -    ]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        
+            </section>
+        
     </section>
-
-       
-  
     
-       <div class="scroll-btn" id="scroll-top" onclick="topFunction()" onmouseover="roundFunction()" onmouseout="sqrFunction()"> 
-            <div><i class="fas fa-chevron-up"></i></div>
-       </div>
-         
-       
-       
+   
+    <div class="scroll-btn" id="scroll-top" onclick="topFunction()" onmouseover="roundFunction()" onmouseout="sqrFunction()"> 
+        <div><i class="fas fa-chevron-up"></i></div>
+   </div>
+
+   
+   
         <script src="js/app.js"></script>
     </body>
     </html>
